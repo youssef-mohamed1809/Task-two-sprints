@@ -1,0 +1,188 @@
+/*Universal selector*/
+* {
+  margin: 5px;
+  padding: 0;
+}
+/*Text Styling*/
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+/*#####Text Styling End#####*/
+
+/*Image Styling*/
+.img-var-width,
+.img-block-contain,
+.img-block-cover {
+  border: 1px solid black;
+}
+.img-var-width {
+  width: 100%;
+  max-width: 600px;
+  height: auto; /*by default*/
+}
+.img-block-contain {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.img-block-cover {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+/*###Image Styling End###*/
+/*Borders*/
+.border {
+  border-radius: 5px;
+  border: 3px;
+  border-color: brown;
+  border-style: dotted;
+}
+.border-shortened {
+  border-radius: 5px;
+  border: 2px brown dashed;
+}
+/*###Borders End###*/
+/*Hyperlinks*/
+.link {
+  text-decoration: none;
+  color: red;
+  display: block;
+}
+/*Pseudo class*/
+.link:hover {
+  text-decoration: dashed;
+  color: green;
+}
+.link:active {
+  text-decoration: solid;
+  color: black;
+}
+.link:visited {
+  text-decoration: solid;
+  color: grey;
+}
+/*###Hyperlinks End###*/
+/*Selectors*/
+.sel1 {
+  color: red;
+}
+.sel2,
+.sel3 {
+  color: blue;
+}
+.sel4 p {
+  color: green;
+  font-weight: bold;
+}
+.sel4 > p {
+  color: yellow;
+  font-weight: bold;
+}
+.sel4 ul li:first-child {
+  color: blueviolet;
+}
+.sel4 ul li:nth-child(2) {
+  color: blue;
+}
+
+.sel4 ul li:last-child {
+  color: red;
+}
+.sel4 * {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+#li-id {
+  color: aqua;
+}
+/*###Selectors End###*/
+/*Box model*/
+.box-model .box {
+  margin: 50px;
+  padding: 50px;
+  background-color: red;
+  color: white;
+  border: 2px solid green;
+}
+/*Inheritance Issue*/
+.make-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.box-model .make-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*###Box model End###*/
+/*Blocks*/
+.block,
+.inline,
+.inline-block {
+  border: 1px solid green;
+  margin: 10px;
+  height: 100px;
+}
+.block {
+  /*No need to specify display as block is the default display for divs*/
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+/*###Blocks End###*/
+/*Positioning*/
+.absolute,
+.fixed {
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  color: white;
+}
+.absolute {
+  position: absolute;
+  z-index: 1;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+  z-index: 2;
+}
+/*###Positioning End###*/
+/*Pseudo Elements*/
+.pseudo-elements::first-line {
+  color: green;
+}
+.pseudo-elements::first-letter {
+  color: red;
+}
+.pseudo-elements::after {
+  content: "NOT AN HTML DIRECT ELEMENT";
+  color: green;
+  font-weight: bold;
+}
+/*###Pseudo Elements End###*/

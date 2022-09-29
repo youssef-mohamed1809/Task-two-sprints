@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layouts</title>
+    <link rel="stylesheet" href="./css/layout-style.css" />
+  </head>
+  <body>
+    <h1>Floats</h1>
+    <div>
+    </div>
+    <div class="float-container">
+      <div class="float">Border breaks the 33.33% width</div>
+      <div class="float"></div>
+      <div class="float"></div>
+    </div>
+    <div class="clear">This is a clear div</div>
+    <div class="float-container">
+      <div class="float border-fix">border-fix is used</div>
+      <div class="float border-fix"></div>
+      <div class="float border-fix"></div>
+    </div>
+    <div class="clear">This is a clear div</div>
+    <div class="float-container clearfix">
+      <div class="float border-fix">Clear fix is used in parent container</div>
+      <div class="float border-fix vertical-text vertical-align-img2">
+        Try to vertical align text
+        <img src="./img/product-2.jpg" />
+      </div>
+      <div class="float border-fix vertical-align-img">
+        <img src="./img/product-2.jpg" />
+      </div>
+    </div>
+
+    <hr />
+    <h1>Flex Boxes</h1>
+    <div class="flexbox">
+      <div>Div 1 Normal</div>
+      <div style="align-self: flex-end; flex-grow: 1; flex-shrink: 0">
+        Div 2 Normal
+      </div>
+      <div>Div 3 Normal</div>
+    </div>
+    <div class="flexbox flex-col-direction">
+      <div>Div 1 Col reverse</div>
+      <div>Div 2 Col reverse</div>
+      <div>Div 3 Col reverse</div>
+    </div>
+    <hr />
+    <h1>CSS Grid</h1>
+    <div class="grid-container">
+      <div>Grid 1</div>
+      <div>Grid 2</div>
+      <div>Grid 3</div>
+      <div>Grid 4</div>
+      <div>Grid 5</div>
+      <div>Grid 6</div>
+      <div>Grid 7</div>
+    </div>
+  </body>
+</html>

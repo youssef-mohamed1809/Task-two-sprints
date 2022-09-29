@@ -1,0 +1,213 @@
+<!--HTML Document Structure-->
+<!--To tell the browser it's an HTML5 document-->
+<!DOCTYPE html>
+<!--Root element-->
+<html lang="en" dir="ltr">
+  <!--Any thing not represented in view port-->
+  <head>
+    <!--Metatags-->
+    <!--Try to remove while using arabic text :D -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title in browser-->
+    <title>First web page</title>
+  </head>
+  <!--Any thing represented in view port-->
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <section>
+      <header>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+      </header>
+      <article>
+        <h6>This is heading 6</h6>
+        <p>
+          <strong>Eos no lorem eirmod diam diam</strong>,
+          <em>eos elitr et gubergren diam sea</em>. Consetetur vero aliquyam
+          invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum,
+          dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos
+          elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed
+          tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos
+          dolores sit no ut diam consetetur duo justo est, sit sanctus diam
+          tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos
+          consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem
+          elitr sanctus eirmod takimata dolor ea invidunt.
+        </p>
+        <p>
+          Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum.
+          Amet dolore tempor consetetur sed lorem dolor sit lorem tempor.
+          Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet
+          et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea
+          erat sed et diam takimata sed justo. Magna takimata justo et amet
+          magna et.
+        </p>
+      </article>
+      <article>
+        <h1>Lists</h1>
+        <h2>Unordered List</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+        <h2>Ordered List</h2>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ol>
+      </article>
+      <article>
+        <h1>Links</h1>
+        <a href="#">Anchor but not a link</a>
+        <a href="https://yahoo.com">Normal Link (Self Target by default)</a>
+        <a href="https://google.com" target="_blank">Blank Target</a>
+        <a href="frame.html">relative path starting from same folder</a>
+        <a href="./frame.html">relative path starting from same folder</a>
+        <h2>In case of Iframe</h2>
+        <iframe src="frame.html"></iframe>
+      </article>
+      <article>
+        <h1>Images</h1>
+        <!--Images are inline elements too-->
+        <!--Images have empty space problem -->
+        <img src="img/product-3.jpg" alt="Image with alt Product 3" />
+        <img src="img/product-4.jpg" width="100" height="200" />
+        <img src="img/product-5.jpg" width="30%" />
+      </article>
+      <article>
+        <!--Style images and borders with CSS not HTML-->
+        <h1>Tables</h1>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mina</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ibrahim</td>
+              <td>28</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article>
+        <h1>Form Elements</h1>
+        <!--Add Multipart/form-data to be able to upload files-->
+        <!--Elemets must have names to have a form value-->
+        <!--Difference between get and post-->
+        <form method="get" enctype="multipart/form-data">
+          <label>Text (Default input):</label>
+          <input type="text" name="name" value="Ramy" />
+          <br />
+          <label>Email Address:</label>
+          <input type="email" name="email" />
+          <br />
+          <label>checkbox</label>
+          <input type="checkbox" /><br />
+          <label>color</label>
+          <input type="color" /><br />
+          <label>date</label>
+          <input type="date" /><br />
+          <label>datetime</label>
+          <input type="datetime" /><br />
+          <label>datetime-local</label>
+          <input type="datetime-local" /><br />
+          <label>file</label>
+          <input type="file" /><br />
+          <label>hidden (Why should we use it)</label>
+          <input type="hidden" /><br />
+          <label>image (submit)</label>
+          <input type="image" src="./img/_product-3.jpg" /><br />
+          <label>month</label>
+          <input type="month" /><br />
+          <label>number</label>
+          <input type="number" step="0.01" /><br />
+          <label>password</label>
+          <input type="password" name="password" /><br />
+          <label>radio</label>
+          <input type="radio" /><br />
+          <label>range</label>
+          <input type="range" /> <br />
+          <label>search</label>
+          <input type="search" /><br />
+          <label>tel</label>
+          <input type="tel" /><br />
+          <label>time</label>
+          <input type="time" /><br />
+          <label>url</label>
+          <input type="url" /><br />
+          <label>week</label>
+          <input type="week" /><br />
+          <label>Text area</label>
+          <textarea>Has no value, Text is inside</textarea><br />
+          <label>Select</label>
+          <select>
+            <optgroup label="Egypt">
+              <option value="1">Cairo</option>
+              <option value="2">Alex</option>
+            </optgroup>
+            <optgroup label="SA">
+              <option value="3">Ryadh</option>
+              <option value="4">Dammam</option>
+            </optgroup></select
+          ><br />
+          <label>Data list</label>
+          <input list="browsers" name="browser" id="browser" />
+          <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
+          <fieldset>
+            <legend>Field set and Buttons</legend>
+            <p>
+              The difference between input type button and &lt;Button&gt; is
+              that, button can contain content
+            </p>
+            <input type="button" value="button" /><br />
+            <button type="button">Button</button><br />
+
+            <input type="reset" value="reset" /><br />
+            <button type="reset">Reset</button><br />
+
+            <input type="submit" value="submit" /><br />
+            <button type="submit">Submit</button><br />
+          </fieldset>
+        </form>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="range" id="a" value="50" />
+          +<input type="number" id="b" value="25" /> =<output
+            name="x"
+            for="a b"
+          ></output>
+        </form>
+      </article>
+      <article>
+        <h1>HTML Entities</h1>
+        &nbsp;&#160;&lt;&gt;&amp; &quot; &copy; &reg;
+      </article>
+    </section>
+  </body>
+</html>

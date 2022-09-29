@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Example Document</title>
+    <style>
+      /*This is an internal style*/
+      h1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+    </style>
+    <!--This is an external style-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <!--Body has inline style-->
+  <body style="padding: 12px; color: rgb(12, 12, 12)">
+    <div style="border: 5px solid red">
+      <h1>H1, Font size,Color and Weight</h1>
+      <h2>H2 Text Align, Decoration and Transformation</h2>
+      <p>Color style is inherited but border is not</p>
+      <h6>Variable width image with max width</h6>
+      <img src="./img/product-2.jpg" class="img-var-width" />
+      <h4>Fixed size image with contain fit</h4>
+      <img src="./img/_product-3.jpg" class="img-block-contain" />
+      <h4>Fixed size image with cover fit</h4>
+      <img src="./img/_product-3.jpg" class="img-block-cover" />
+      <h4 class="border">borders</h4>
+      <h4 class="border-shortened">Border shortened</h4>
+      <a href="#">Normal link</a>
+      <a class="link" href="#">Styled link (block instead of inline)</a>
+
+      <div class="selectors">
+        <h3 class="sel1">Single Selector</h3>
+        <h3 class="sel2">Multiple Selectors</h3>
+        <h3 class="sel3">Multiple Selectors</h3>
+        <div class="sel4">
+          <ul>
+            <li>First child li inside ul</li>
+            <li>Second li inside ul</li>
+            <li>third li inside ul</li>
+            <li id="li-id">Li with ID</li>
+            <li>last li inside ul</li>
+          </ul>
+          <p>First Paragraph and direct child in Sel4</p>
+          <div>
+            <p>Second Paragraph in Sel4 (not a direct child)</p>
+          </div>
+        </div>
+      </div>
+      <div class="colors">
+        <div style="background-color: rgb(255, 0, 0)">Colors using RGB</div>
+        <div style="background-color: rgba(255, 0, 0, 0.5)">
+          Colors using RGBA
+        </div>
+        <div style="background-color: #ff0000">Colors using Hexadecimal</div>
+      </div>
+    </div>
+    <div class="box-model">
+      <div class="box">This is a block element content</div>
+      <div class="box">This is a block element content</div>
+      <span class="box"
+        >This is an inline element content with margin collapse</span
+      >
+      <span class="box make-center-block"
+        >This is an inline element with block display</span
+      >
+    </div>
+    <div class="blocks">
+      <div class="block">This is block div</div>
+      <div class="block">This is block div</div>
+      <div class="block">This is block div</div>
+      <div class="block">This is block div</div>
+      <div class="inline">This is inline div</div>
+      <div class="inline">This is inline div</div>
+      <div class="inline">This is inline div</div>
+      <div class="inline">This is inline div</div>
+      <div class="inline-block">This is inline block div</div>
+      <div class="inline-block">This is inline block div</div>
+      <div class="inline-block">This is inline block div</div>
+      <div class="inline-block">This is inline block div</div>
+    </div>
+    <div class="relative">
+      <div class="absolute">Abs 1</div>
+      <div class="fixed">Fixed 1</div>
+    </div>
+    <div class="absolute">Abs 2</div>
+    <div class="pseudo-elements">
+      This is a first line text<br />
+      This is a second line text<br />
+    </div>
+  </body>
+</html>
